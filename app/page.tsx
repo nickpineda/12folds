@@ -80,8 +80,6 @@ transition: "opacity 0.2s ease",
           <p>Each fold is a decision</p>
           <p>Repetition is refinement</p>
           <p>You don&apos;t need to be perfect</p>
-
-          <p>There is power in small things done well</p>
           <p>You just need to begin</p>
 
           <p>Twelve folds</p>
