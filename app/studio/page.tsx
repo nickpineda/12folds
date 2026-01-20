@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-export default function Home() {
+export default function Studio() {
   return (
     <div style={{ minHeight: "100vh", position: "relative" }}>
-      {/* TOP-LEFT BRAND */}
-      <header
+      {/* TOP-LEFT BRAND (mirrored from home) */}
+     <header
   style={{
     position: "fixed",
     top: "3rem",
@@ -82,7 +82,7 @@ export default function Home() {
   </Link>
 </header>
 
-      {/* CENTERED MANIFESTO */}
+      {/* CENTER CONTENT — STUDIO */}
       <main
         style={{
           minHeight: "100vh",
@@ -95,23 +95,15 @@ export default function Home() {
         <section
           style={{
             textAlign: "center",
-            maxWidth: "480px",
+            maxWidth: "520px",
             fontSize: "1.05rem",
             lineHeight: 1.8,
           }}
         >
-          <p>Each fold is a decision</p>
-          <p>Repetition is refinement</p>
-          <p>You don&apos;t need to be perfect</p>
-
+          <p>
+            12folds is a studio rooted in process, repetition, and restraint
           
-
-          <p>You just need to begin</p>
-
-          
-
-          <p>Twelve folds</p>
-          <p>That’s it.</p>
+          </p>
         </section>
       </main>
     </div>
