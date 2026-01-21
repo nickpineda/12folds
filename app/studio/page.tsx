@@ -4,7 +4,7 @@ export default function Studio() {
   return (
     <div style={{ minHeight: "100vh", position: "relative" }}>
       {/* TOP-LEFT BRAND (mirrored from home) */}
-     <header
+    <header
   style={{
     position: "fixed",
     top: "3rem",
@@ -12,38 +12,70 @@ export default function Studio() {
     zIndex: 10,
   }}
 >
+  {/* 12folds */}
+  <Link
+    href="/"
+    style={{
+      textDecoration: "none",
+      color: "#b8b8b8",
+    }}
+  >
+    <h1
+      style={{
+        fontSize: "1.75rem",
+        fontWeight: 200,
+        margin: 0,
+      }}
+    >
+      12folds
+    </h1>
+  </Link>
+
+  {/* NAV STACK (Studio, About, IG) */}
   <div
     style={{
       display: "flex",
-      alignItems: "center",
-      gap: "0.6rem",
+      flexDirection: "column",
+      marginTop: "0.35rem",
+      marginLeft: "0.15rem",
+      gap: "0.25rem",
+      alignItems: "flex-start",
     }}
   >
     <Link
-      href="/"
+      href="/studio"
       style={{
+        fontSize: "0.85rem",
+        fontWeight: 200,
+        color: "#9e9e9e",
         textDecoration: "none",
-        color: "#b8b8b8",
       }}
     >
-      <h1
-        style={{
-          fontSize: "1.75rem",
-          fontWeight: 200,
-          margin: 0,
-        }}
-      >
-        12folds
-      </h1>
+      Studio
     </Link>
 
+    <Link
+      href="/about"
+      style={{
+        fontSize: "0.85rem",
+        fontWeight: 200,
+        color: "#9e9e9e",
+        textDecoration: "none",
+      }}
+    >
+      About
+    </Link>
+
+    {/* Instagram — now truly aligned */}
     <a
       href="https://instagram.com/12folds"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="12folds on Instagram"
       style={{
-        color: "#9e9e9e",
+        marginTop: "0.35rem",
+        width: "16px",
+        color: "#7f7f7f",
         textDecoration: "none",
         lineHeight: 0,
       }}
@@ -65,21 +97,6 @@ export default function Studio() {
       </svg>
     </a>
   </div>
-
-  <Link
-    href="/studio"
-    style={{
-      display: "inline-block",
-      marginTop: "0.35rem",
-      marginLeft: "0.15rem",
-      fontSize: "0.85rem",
-      fontWeight: 200,
-      color: "#9e9e9e",
-      textDecoration: "none",
-    }}
-  >
-    Studio
-  </Link>
 </header>
 
       {/* CENTER CONTENT — STUDIO */}
@@ -101,7 +118,7 @@ export default function Studio() {
           }}
         >
           <p>
-            12folds is a studio rooted in process, repetition, and restraint
+            12folds
           
           </p>
         </section>

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div style={{ minHeight: "100vh", position: "relative" }}>
-      {/* TOP-LEFT BRAND */}
+      {/* FIXED MASTHEAD */}
       <header
   style={{
     position: "fixed",
@@ -12,38 +12,70 @@ export default function Home() {
     zIndex: 10,
   }}
 >
+  {/* 12folds */}
+  <Link
+    href="/"
+    style={{
+      textDecoration: "none",
+      color: "#b8b8b8",
+    }}
+  >
+    <h1
+      style={{
+        fontSize: "1.75rem",
+        fontWeight: 200,
+        margin: 0,
+      }}
+    >
+      12folds
+    </h1>
+  </Link>
+
+  {/* NAV STACK (Studio, About, IG) */}
   <div
     style={{
       display: "flex",
-      alignItems: "center",
-      gap: "0.6rem",
+      flexDirection: "column",
+      marginTop: "0.35rem",
+      marginLeft: "0.15rem",
+      gap: "0.25rem",
+      alignItems: "flex-start",
     }}
   >
     <Link
-      href="/"
+      href="/studio"
       style={{
+        fontSize: "0.85rem",
+        fontWeight: 200,
+        color: "#9e9e9e",
         textDecoration: "none",
-        color: "#b8b8b8",
       }}
     >
-      <h1
-        style={{
-          fontSize: "1.75rem",
-          fontWeight: 200,
-          margin: 0,
-        }}
-      >
-        12folds
-      </h1>
+      Studio
     </Link>
 
+    <Link
+      href="/about"
+      style={{
+        fontSize: "0.85rem",
+        fontWeight: 200,
+        color: "#9e9e9e",
+        textDecoration: "none",
+      }}
+    >
+      About
+    </Link>
+
+    {/* Instagram — now truly aligned */}
     <a
       href="https://instagram.com/12folds"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="12folds on Instagram"
       style={{
-        color: "#9e9e9e",
+        marginTop: "0.35rem",
+        width: "16px",
+        color: "#7f7f7f",
         textDecoration: "none",
         lineHeight: 0,
       }}
@@ -65,21 +97,6 @@ export default function Home() {
       </svg>
     </a>
   </div>
-
-  <Link
-    href="/studio"
-    style={{
-      display: "inline-block",
-      marginTop: "0.35rem",
-      marginLeft: "0.15rem",
-      fontSize: "0.85rem",
-      fontWeight: 200,
-      color: "#9e9e9e",
-      textDecoration: "none",
-    }}
-  >
-    Studio
-  </Link>
 </header>
 
       {/* CENTERED MANIFESTO */}
@@ -104,11 +121,9 @@ export default function Home() {
           <p>Repetition is refinement</p>
           <p>You don&apos;t need to be perfect</p>
 
-          
 
           <p>You just need to begin</p>
 
-          
 
           <p>Twelve folds</p>
           <p>That’s it.</p>
