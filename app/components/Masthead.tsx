@@ -71,7 +71,7 @@ export default function Masthead() {
 
         {/* Instagram */}
         <a
-          href="https://instagram.com/YOUR_INSTAGRAM_HANDLE"
+          href="https://instagram.com"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="12folds on Instagram"
